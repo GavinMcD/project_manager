@@ -1,5 +1,8 @@
 class Person < ActiveRecord::Base
   
+  has_many  :roles
+  has_many  :projects, :through => :roles     # middle table must define belongs to on both of these
+  
   validates :first_name, :presence => true    # rails validations - look up
   validates :last_name,  :presence => true
   

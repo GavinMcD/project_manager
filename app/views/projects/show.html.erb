@@ -1,0 +1,8 @@
+<p>
+  <b>Title:</b>
+  <%= @project.title %>
+</p>
+
+<%= render @project %>  <!-- shows the project on the show page -->
+
+<%= link_to raw('&larr; Back to Projects'), projects_path %>

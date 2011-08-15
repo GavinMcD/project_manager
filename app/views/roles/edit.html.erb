@@ -1,0 +1,7 @@
+<header>
+	<p>Edit Role for: <%= @role.project.title %></p>
+</header>
+
+<%= render :partial => 'form' %>
+
+<%= link_to raw("&larr; Back to Project"), project_path(@role.project) %>
